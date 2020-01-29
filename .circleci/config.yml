@@ -206,11 +206,7 @@ workflows:
   feature_jobs:
     jobs:
       - save_and_restore_cache
-      - approve-me: 
-          type: approval
       - contexts:
-          requires: 
-            - approve-me
           context: yugesh-org-global
       - multi-contexts:
           context: yugesh-individual-local
